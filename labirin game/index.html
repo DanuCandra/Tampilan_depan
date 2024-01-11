@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="author" content="CodePel">
-      <title> Labirin Game</title>
-      <!-- Style CSS -->
-      <link rel="stylesheet" href="./css/style.css">
-      <!-- Demo CSS (No need to include it into your project) -->
-      <link rel="stylesheet" href="./css/demo.css">
-      
-   </head>
-   <body>
-      <header class="cd__intro">
-         <h1> Labirin Game </h1>
-         <p> Labirin Game </p>
-         <div class="cd__action">
-            <a href="https://www.codepel.com/html5-games/html5-maze-game-source-code" title="Back to download and tutorial page" class="cd__btn back">Back to Tutorial</a>
-         </div>
-      </header>
-      <!--$%adsense%$-->
-      <main class="cd__main">
-         <!-- Start DEMO HTML (Use the following code into your project)-->
-         <!-- 
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="CodePel" />
+    <title>Labirin Game</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Demo CSS (No need to include it into your project) -->
+    <link rel="stylesheet" href="./css/demo.css" />
+    <style>
+      .back-button {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 1000;
+      }
+      .back-button img {
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="screen"></div>
+    <header class="cd__intro">
+      <h1>Labirin Game</h1>
+      <p>Labirin Game</p>
+      <div class="cd__action">
+        <a
+          href="https://www.codepel.com/html5-games/html5-maze-game-source-code"
+          title="Back to download and tutorial page"
+          class="cd__btn back"
+          >Back to Tutorial</a
+        >
+      </div>
+    </header>
+    <!--$%adsense%$-->
+    <main class="cd__main">
+      <!-- Start DEMO HTML (Use the following code into your project)-->
+      <!-- 
 Originally just an idea and excuse to test the gamepad API 🎮, this spiraled out of control a little into a multi-input maze. You can navigate trough the maze, depending on your browser/os, by:
 - clicking the up/down/left/rigt-buttons
 - the arrow keys on your keyboard
@@ -35,34 +51,42 @@ Originally just an idea and excuse to test the gamepad API 🎮, this spiraled o
 
 The maze is randomly generated using the "recursive backtracking" algorithm. Found this to be the best option after starting from this SO-Answer: https://stackoverflow.com/a/23681987 and after reading this: http://weblog.jamisbuck.org/2010/12/27/maze-generation-recursive-backtracking"
 -->
-<div id="container">
-	<div class="mbox">
-	<div id="maze">
-		<div id="thingie">
-			<div class="emo" id="emo">🥺</div>
-		</div>
-		<div id="home">
-			<div class="emo">🏠</div>
-		</div>
-		<div class="barrier" id="top"></div>
-		<div class="barrier" id="bottom"></div>
-	</div>
-		</div>
-	<div class="controls">
-		<div class="buttons">
-			<button class="btn" id="bu"><div class="chevron">↑</div></button>
-			<button class="btn" id="bd"><div class="chevron">↓</div></button>
-			<button class="btn" id="bl"><div class="chevron">←</div></button>
-			<button class="btn" id="br"><div class="chevron">→</div></button>
-		</div>
-	</div>
-</div>
-         <!-- END EDMO HTML (Happy Coding!)-->
-      </main>
-      <footer class="cd__credit">Author: Valentin - Distributed By: <a title="Free web design code & scripts" href="https://www.codepel.com?source=demo-page" target="_blank">CodePel</a></footer>
-      
-      <!-- Script JS -->
-      <script src="./js/script.js"></script>
-      <!--$%analytics%$-->
-   </body>
+      <div id="container">
+        <div class="mbox">
+          <div id="maze">
+            <div id="thingie">
+              <div class="emo" id="emo">🥺</div>
+            </div>
+            <div id="home">
+              <div class="emo">🏠</div>
+            </div>
+            <div class="barrier" id="top"></div>
+            <div class="barrier" id="bottom"></div>
+          </div>
+        </div>
+        <div class="controls">
+          <div class="buttons">
+            <button class="btn" id="bu"><div class="chevron">↑</div></button>
+            <button class="btn" id="bd"><div class="chevron">↓</div></button>
+            <button class="btn" id="bl"><div class="chevron">←</div></button>
+            <button class="btn" id="br"><div class="chevron">→</div></button>
+          </div>
+        </div>
+      </div>
+      <!-- END EDMO HTML (Happy Coding!)-->
+    </main>
+    <footer class="cd__credit">
+      Author: Valentin - Distributed By:
+      <a
+        title="Free web design code & scripts"
+        href="https://www.codepel.com?source=demo-page"
+        target="_blank"
+        >CodePel</a
+      >
+    </footer>
+
+    <!-- Script JS -->
+    <script src="./js/script.js"></script>
+    <!--$%analytics%$-->
+  </body>
 </html>
